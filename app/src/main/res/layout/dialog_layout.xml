@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dialog_header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#eb5757"
+        app:layout_constraintBottom_toTopOf="@+id/dialog_title"
+        app:layout_constraintEnd_toStartOf="@+id/dialog_guide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:id="@+id/dialog_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:src="@drawable/dialog_status_error_70"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/dialog_plus_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_status_plus_15"
+            app:layout_constraintBottom_toBottomOf="@+id/dialog_icon"
+            app:layout_constraintEnd_toStartOf="@+id/dialog_icon"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/dialog_icon"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <ImageView
+            android:id="@+id/dialog_plus_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_status_plus_15"
+            app:layout_constraintBottom_toBottomOf="@+id/dialog_icon"
+            app:layout_constraintEnd_toStartOf="@+id/dialog_icon"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/dialog_icon"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <ImageView
+            android:id="@+id/dialog_plus_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dialog_status_plus_15"
+            app:layout_constraintBottom_toBottomOf="@+id/dialog_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/dialog_icon"
+            app:layout_constraintTop_toTopOf="@+id/dialog_icon"
+            app:layout_constraintVertical_bias="0.3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/text_title_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        app:layout_constraintBottom_toTopOf="@+id/dialog_description"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_header"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/dialog_description"
+        style="@style/text_description_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="설명"
+        app:layout_constraintBottom_toTopOf="@+id/dialog_footer_confirm"
+        app:layout_constraintEnd_toEndOf="@+id/dialog_guide"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialog_footer_cencel"
+        style="@style/cancel_button_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="취소"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@+id/dialog_footer_confirm"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_description"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dialog_footer_confirm"
+        style="@style/submit_button_dialog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="확인"
+        app:layout_constraintEnd_toEndOf="@+id/dialog_guide"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@+id/dialog_footer_cencel"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_description" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/dialog_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="300dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
