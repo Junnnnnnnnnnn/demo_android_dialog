@@ -41,7 +41,8 @@ private fun initDialog(){
 }
 ```
 
-![스크린샷 2021-11-30 오후 5.04.10](/스크린샷 2021-11-30 오후 5.04.10.png)
+![스크린샷 2021-11-30 오후 5 04 10](https://user-images.githubusercontent.com/39250642/144015913-ad7ff0ba-f613-4128-998f-1bc3fd4b0ea7.png)
+
 
 ## ✏️ 커스텀 Dialog 설정
 
@@ -171,7 +172,8 @@ private fun initDialog(){
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-![스크린샷 2021-11-30 오후 5.04.51](/스크린샷 2021-11-30 오후 5.04.51.png)
+![스크린샷 2021-11-30 오후 5 04 51](https://user-images.githubusercontent.com/39250642/144016015-5528d9f7-1954-435a-bae3-193de3fa43cd.png)
+
 
 ### ✏️ Dialog class 만들어 보기
 
@@ -353,7 +355,8 @@ class ModuleDialog(private val context: Context, @LayoutRes private val res: Int
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-###  ![스크린샷 2021-11-30 오후 5.04.59](/스크린샷 2021-11-30 오후 5.04.59.png)
+![스크린샷 2021-11-30 오후 5 04 59](https://user-images.githubusercontent.com/39250642/144016052-eec8196f-c588-4503-aa10-4aa2122e745c.png)
+
 
 ### ✏️ 하단 고정 레이아웃 설정 하기
 
