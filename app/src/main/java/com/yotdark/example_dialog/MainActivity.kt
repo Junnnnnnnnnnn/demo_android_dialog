@@ -1,14 +1,10 @@
 package com.yotdark.example_dialog
 
 import android.app.AlertDialog
-import android.app.Dialog
-import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.Toast
-import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
 
